@@ -9,10 +9,16 @@ public class Loop4 {
         //(2 wersje: z wyznaczaniem i bez wyznaczania liczby o odwrotnych cyfrach)
         Scanner scanner = new Scanner(System.in);
         System.out.println("give me a number: ");
-        Integer number = scanner.nextInt();
+        int number = scanner.nextInt();
+        int reversed = 0;
+        int i = 0;
         while (number > 0) {
-            System.out.print(number % 10);
-            number = number / 10;
+            int lastDigit = number % 10;
+            System.out.print(lastDigit);
+            reversed = reversed * 10 + lastDigit;
+            i++;
+            number /= 10;
         }
+        System.out.println("\nreversed number is: " + reversed);
     }
 }

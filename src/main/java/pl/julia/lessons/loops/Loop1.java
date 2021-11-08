@@ -4,11 +4,11 @@ public class Loop1 {
     public static void main(String[] args) {
         //Napisz program, który obliczy sumę pierwszych 10ciu liczb naturalnych.
         int i = 0;
-        int counter = 0;
+        int sum = 0;
         while (i < 10) {
             i++;
-            counter = counter + i;
+            sum += i;
         }
-        System.out.println(counter);
+        System.out.println(sum);
     }
 }

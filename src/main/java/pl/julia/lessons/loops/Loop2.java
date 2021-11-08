@@ -7,11 +7,11 @@ public class Loop2 {
         //Napisz program obliczający silnię liczby wprowadzonej przez użytkownika
         Scanner scan = new Scanner(System.in);
         System.out.println("give me a number: ");
-        Integer silnia = scan.nextInt();
-        Integer counter = 1;
-        for (int i = silnia; i > 0; i--) {
-            counter = counter * i;
+        int number = scan.nextInt();
+        int result = 1;
+        for (int i = number; i > 0; i--) {
+            result *= i;
         }
-        System.out.println(counter);
+        System.out.println(result);
     }
 }
